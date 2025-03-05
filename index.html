@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>myother.me - Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/3mmanu3lmois3s/memofocus/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <section id="game-screen" class="screen">
+        <main id="face-grid"></main>
+    </section>
+
+    <section id="level1-instructions" class="screen">
+        <h2>Nivel 1: Instrucciones</h2>
+        <p>Encuentra y marca las 7 caras en el orden correcto.</p>
+        <p>Cuenta la leyenda que quien logre pasar el nivel 1 conquistará la humanidad.</p>
+    </section>
+
+    <section id="level2-instructions" class="screen">
+        <h2>Nivel 2: Instrucciones</h2>
+        <p>Completa la frase de 12 caracteres utilizando el alfabeto de caras. Las primeras 10 caras se muestran. Encuentra las 2 caras restantes en la cuadrícula y colócalas en los espacios en blanco.</p>
+        <div id="alphabet-display">
+            <h3>Alfabeto de Caras</h3>
+            <table id="alphabet-table">
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <button id="next-level-button">Siguiente Nivel</button> <button id="restart-button">Reiniciar</button> </div>
+    </div>
+	
+<div id="modal-error" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 id="modal-error-title"></h2>
+        <p id="modal-error-message"></p>
+        <button id="restart-level2-button">Reiniciar Nivel 2</button>
+        <button id="restart-game-button">Reiniciar Juego</button>
+    </div>
+</div>	
+    <footer>
+        <div class="target-faces"></div>
+        <div class="footer-arrows">
+            <i class="bi bi-arrow-up-circle-fill up-arrow"></i>
+            <i class="bi bi-arrow-down-circle-fill down-arrow"></i>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/3mmanu3lmois3s/memofocus/script.js"></script>
+</body>
+</html>
